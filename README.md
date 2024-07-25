@@ -73,3 +73,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 Contact
 For any questions or comments, please contact Your Name.
+
+E-mail: tuncer_emre@outlook.com.tr
