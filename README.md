@@ -68,8 +68,7 @@ Execute the script to analyze emitter localization in a 3D environment.
 Contributing
 Contributions to this project are welcome. Feel free to submit pull requests or report issues. For detailed contribution guidelines, please refer to CONTRIBUTING.md.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
 
 Contact
 For any questions or comments, please contact Emre Tuncer.
