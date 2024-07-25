@@ -7,7 +7,7 @@ clc
 prompt_yes_no = [ "Do you want to use random inputs ? yes/no "];
 dlgtitle_yes_no = 'Input';
 dims_yes_no = [1 38];
-definput_yes_no = {'no'};
+definput_yes_no = {'yes'};
 UserInput_yes_no = inputdlg(prompt_yes_no, dlgtitle_yes_no, dims_yes_no, definput_yes_no);
 
 % Check if the user canceled the input dialog.
@@ -69,7 +69,7 @@ if strcmp(yes_no, 'no')
 prompt = [ "Enter the number of sensors: ","Enter the x position of sensors by putting comma between them:"," Enter the y position of sensors by putting comma between them: " , " Enter position of emitter", "Enter the signal to noise ratio:","Number of monte_carlo_trial"];
 dlgtitle = 'Input';
 dims = [1 38];
-definput = {'4', '30,40,75,80', '80 ,30,65,20', '50 , 50', '3','100'};
+definput = {'2', '30,80', '90 ,20', '50 , 50', '3','100'};
 UserInput = inputdlg(prompt, dlgtitle, dims, definput);
 % Check if the user canceled the input dialog.
 if isempty(UserInput)
@@ -233,7 +233,8 @@ legend(); %legend fonksiyonu, bir grafikte çizilen elemanların açıklamaları
 % for kk = 1:1:number_of_iterations                                                                   %---------------------------------------------- histogram için
 figure(1);
 plot(colms,rows, 'o','MarkerSize', 5,'MarkerFaceColor', 'b','DisplayName', 'Estimated Location Points')
-
+xlabel('X-axis');
+ylabel('Y-axis');
  hold on
  
  xlim([0, 100]);
@@ -249,6 +250,7 @@ hist3(X,'Ctrs',{0:3:100 0:3:100})
 
 xlabel('X-axis');
 ylabel('Y-axis');
+zlabel('Z-axis');
 xlim([0, 100]);
 ylim([0, 100]);
 
@@ -263,5 +265,7 @@ hold on;
 plot(  total_result_x,  total_result_y, 'diamond', 'MarkerFaceColor', 'red', 'MarkerSize', 10,'DisplayName', 'Estimated Location')
 xlim([0, 100]);
 ylim([0, 100]);
+xlabel('X-axis');
+ylabel('Y-axis');
 grid on;
 legend(); %legend fonksiyonu, bir grafikte çizilen elemanların açıklamalarını eklemek için kullanılır.
