@@ -55,7 +55,7 @@ Usage
 
 2D Localization:
 
-Modify the script parameters to set the number of sensors, their distribution, and the SNR value.
+Modify the script parameters by using GUI that show up after run the script to set the number of sensors, their distribution, and the SNR value.
 
 Run the script to observe the localization accuracy.
 
