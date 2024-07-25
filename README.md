@@ -61,7 +61,7 @@ Run the script to observe the localization accuracy.
 
 3D Localization:
 
-Adjust the parameters in the 3D localization script as needed.
+ct the right .m file according to sensor number.
 
 Execute the script to analyze emitter localization in a 3D environment.
 
